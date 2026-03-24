@@ -40,7 +40,7 @@ alt.themes.enable('large_theme')
 st.title("💧 PFAS Treatment Technologies — Ridgeline Visualization Tool (Prototype)")
 st.markdown(
     "Upload your dataset and adjust the assumptions. "
-    "This tool analyzes 21 distinct metrics across environmental, operational, and financial categories."
+    "This tool analyzes 17 distinct metrics across environmental, operational, and financial categories."
 )
 st.divider()
 
@@ -48,9 +48,9 @@ st.divider()
 # Robust Loader + Header Normalization & Mapping
 # =====================================================
 
-# Required columns for the 21 tabs and core logic
+# Required columns for the 17 tabs and core logic
 REQUIRED = {
-    "tech", "score", "ghg", "affordability", "gehh", "lifecycle_cost",
+    "tech", "score", "ghg", "affordability", "gehh", "lifecycle_cost (Capital + O&M)",
     "GEHH_Acid_CIIX", "Afford_CapCost_CIIX", "GEHH_Ecot_CIIX",
     "GEHH_Eutr_CIIX", "FacOp_Foot_CIIX", "GWP_GHG_CIIX",
     "Afford_LifecycleCost_CIIX", "FacOp_Maint_CIIX", "GEHH_ODP_CIIX", 
