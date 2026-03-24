@@ -37,7 +37,7 @@ alt.themes.enable('large_theme')
 # ------------------------------
 # Title
 # ------------------------------
-st.title("💧 PFAS Treatment Technologies — Ridgeline Visualization Tool Prototype")
+st.title("💧 PFAS Treatment Technologies — Ridgeline Visualization Tool (Prototype)")
 st.markdown(
     "Upload your dataset and adjust the assumptions. "
     "This tool analyzes 21 distinct metrics across environmental, operational, and financial categories."
