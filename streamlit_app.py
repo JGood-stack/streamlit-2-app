@@ -329,7 +329,7 @@ with tab5:
 
 with tab6:
     st.subheader("Acidification (kgSO2eq) (lower is better)")
-    st.altair_chart(ridgeline(filtered, "GEHH_Acid_CIIX", "Acidification by Technologycompared to IX", "Score: Acidification (kgSO2eq) (lower is better)"), use_container_width=True)
+    st.altair_chart(ridgeline(filtered, "GEHH_Acid_CIIX", "Acidification by Technology compared to IX", "Score: Acidification (kgSO2eq) (lower is better)"), use_container_width=True)
 
 with tab7:
     st.subheader("Capital Cost (NPV($))(lower is better)")
@@ -352,8 +352,8 @@ with tab11:
     st.altair_chart(ridgeline(filtered, "GWP_GHG_CIIX", "GWP GHG by Technology compared to IX", "(kgCO2e) (lower is better)"), use_container_width=True)
 
 with tab12:
-    st.subheader("Lifecycle Cost (CIIX) (NPV($$)) (lower is better)")
-    st.altair_chart(ridgeline(filtered, "Afford_LifecycleCost_CIIX", "Lifecycle Cost (CIIX) by Technology compared to IX", "Cost (NPV($$)) (lower is better)"), use_container_width=True)
+    st.subheader("Lifecycle Cost (CIIX) (NPV($)) (lower is better)")
+    st.altair_chart(ridgeline(filtered, "Afford_LifecycleCost_CIIX", "Lifecycle Cost (CIIX) by Technology compared to IX", "Cost (NPV($)) (lower is better)"), use_container_width=True)
 
 with tab13:
     st.subheader("Maintenance Effort (Hours/Year) (lower is better)")
@@ -372,8 +372,8 @@ with tab16:
     st.altair_chart(ridgeline(filtered, "FacOp_Waste_CIIX", "Waste Generation by Technology compared to IX", "Waste Generation (Galloon/Year) (lower is better)"), use_container_width=True)
 
 with tab17:
-    st.subheader("O&M Cost (NPV($$)) (lower is better)")
-    st.altair_chart(ridgeline(filtered, "Afford_OMCost_CIIX", "O&M Cost by Technology compared to IX", "O&M Cost (%)) (lower is better)"), use_container_width=True)
+    st.subheader("O&M Cost (NPV($)) (lower is better)")
+    st.altair_chart(ridgeline(filtered, "Afford_OMCost_CIIX", "O&M Cost by Technology compared to IX", "O&M Cost (NPV($)) (lower is better)"), use_container_width=True)
 
 st.divider()
 st.caption(f"PFAS Ridgeline Tool — Showing {len(filtered)} rows. University of Maine (2025)")
