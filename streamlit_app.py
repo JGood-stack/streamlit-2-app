@@ -373,7 +373,7 @@ with tab16:
 
 with tab17:
     st.subheader("O&M Cost (NPV($$)) (lower is better)")
-    st.altair_chart(ridgeline(filtered, "Afford_OMCost_CIIX", "O&M Cost by Technology", "O&M Cost (NPV($$)) (lower is better)"), use_container_width=True)
+    st.altair_chart(ridgeline(filtered, "Afford_OMCost_CIIX", "O&M Cost by Technology", "O&M Cost (%)) (lower is better)"), use_container_width=True)
 
 st.divider()
 st.caption(f"PFAS Ridgeline Tool — Showing {len(filtered)} rows. University of Maine (2025)")
