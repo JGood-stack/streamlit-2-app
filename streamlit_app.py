@@ -321,7 +321,7 @@ with tab3:
 
 with tab4:
     st.subheader("Global Warming Potential (kgCO2e) (lower is better)")
-    st.altair_chart(ridgeline(filtered, "ghg", "Global Warming Potential by Technology", "Score: GHG (kgCO2e) (lower is better)"), use_container_width=True)
+    st.altair_chart(ridgeline(filtered, "ghg", "GHG by Technology", "Score: GHG (kgCO2e) (lower is better)"), use_container_width=True)
 
 with tab5:
     st.subheader("Lifecycle Cost (Capital + O&M) ($$) (lower is better)")
@@ -361,7 +361,7 @@ with tab13:
 
 with tab14:
     st.subheader("Ozone Depletion (kgCFC-11eq) (lower is better)")
-    st.altair_chart(ridgeline(filtered, "GEHH_ODP_CIIX", "Ozone Depletion by Technology", "Score: ODP (kgCFC-11eq) (lower is better)"), use_container_width=True)
+    st.altair_chart(ridgeline(filtered, "GEHH_ODP_CIIX", "ODP by Technology", "Score: ODP (kgCFC-11eq) (lower is better)"), use_container_width=True)
 
 with tab15:
     st.subheader("Smog Formation (kgO3eq) (lower is better)")
