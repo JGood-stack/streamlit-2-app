@@ -50,7 +50,7 @@ st.divider()
 
 # Required columns for the 17 tabs and core logic
 REQUIRED = {
-    "tech", "score", "ghg", "affordability", "gehh", "lifecycle_cost (Capital + O&M)",
+    "tech", "score", "ghg", "affordability", "gehh", "lifecycle_cost",
     "GEHH_Acid_CIIX", "Afford_CapCost_CIIX", "GEHH_Ecot_CIIX",
     "GEHH_Eutr_CIIX", "FacOp_Foot_CIIX", "GWP_GHG_CIIX",
     "Afford_LifecycleCost_CIIX", "FacOp_Maint_CIIX", "GEHH_ODP_CIIX", 
@@ -67,7 +67,7 @@ OPTIONAL = {
 
 HEADER_MAP = {
     "tech": "tech", "score": "score", "ghg": "ghg", "affordability": "affordability",
-    "gehh": "gehh", "lifecycle_cost (Capital + O&M)": "lifecycle_cost (Capital + O&M)",
+    "gehh": "gehh", "lifecycle_cost (capital + o&m)": "lifecycle_cost",
     # Specific metric mappings
     "gehh acid ciix": "GEHH_Acid_CIIX", "afford capcost ciix": "Afford_CapCost_CIIX",
     "gehh ecot ciix": "GEHH_Ecot_CIIX", "gehh eutr ciix": "GEHH_Eutr_CIIX", 
@@ -325,7 +325,7 @@ with tab4:
 
 with tab5:
     st.subheader("Lifecycle Cost (Capital + O&M) (lower is better)")
-    st.altair_chart(ridgeline(filtered, "lifecycle_cost (Capital + O&M)", "Lifecycle Cost by Technology", "Total Cost ($) (lower is better)"), use_container_width=True)
+    st.altair_chart(ridgeline(filtered, "lifecycle_cost", "Lifecycle Cost by Technology", "Lifecycle Cost ($) (lower is better)"), use_container_width=True)
 
 with tab6:
     st.subheader("Acidification (lower is better)")
