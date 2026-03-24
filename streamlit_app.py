@@ -329,51 +329,51 @@ with tab5:
 
 with tab6:
     st.subheader("Acidification (kgSO2eq) (lower is better)")
-    st.altair_chart(ridgeline(filtered, "GEHH_Acid_CIIX", "Acidification by Technology", "Score: Acidification (kgSO2eq) (lower is better)"), use_container_width=True)
+    st.altair_chart(ridgeline(filtered, "GEHH_Acid_CIIX", "Acidification by Technologycompared to IX", "Score: Acidification (kgSO2eq) (lower is better)"), use_container_width=True)
 
 with tab7:
     st.subheader("Capital Cost (NPV($))(lower is better)")
-    st.altair_chart(ridgeline(filtered, "Afford_CapCost_CIIX", "Capital Cost by Technology", "Cost (NPV($)) (lower is better)"), use_container_width=True)
+    st.altair_chart(ridgeline(filtered, "Afford_CapCost_CIIX", "Capital Cost by Technology compared to IX", "Cost (NPV($)) (lower is better)"), use_container_width=True)
 
 with tab8:
     st.subheader("Ecotoxicity (CTUe) (lower is better)")
-    st.altair_chart(ridgeline(filtered, "GEHH_Ecot_CIIX", "Ecotoxicity by Technology", "Score: Ecotoxicity (CTUe) (lower is better)"), use_container_width=True)
+    st.altair_chart(ridgeline(filtered, "GEHH_Ecot_CIIX", "Ecotoxicity by Technology compared to IX", "Score: Ecotoxicity (CTUe) (lower is better)"), use_container_width=True)
 
 with tab9:
     st.subheader("Eutrophication (kgNeq) (lower is better)")
-    st.altair_chart(ridgeline(filtered, "GEHH_Eutr_CIIX", "Eutrophication by Technology", "Score: Eutrophication (kgNeq) (lower is better)"), use_container_width=True)
+    st.altair_chart(ridgeline(filtered, "GEHH_Eutr_CIIX", "Eutrophication by Technology compared to IX", "Score: Eutrophication (kgNeq) (lower is better)"), use_container_width=True)
 
 with tab10:
     st.subheader("Facility Footprint (sqft) (lower is better)")
-    st.altair_chart(ridgeline(filtered, "FacOp_Foot_CIIX", "Facility Footprint by Technology", "Area (sqft) (lower is better)"), use_container_width=True)
+    st.altair_chart(ridgeline(filtered, "FacOp_Foot_CIIX", "Facility Footprint by Technology compared to IX", "Area (sqft) (lower is better)"), use_container_width=True)
 
 with tab11:
     st.subheader("GWP GHG (kgCO2eq) (lower is better)")
-    st.altair_chart(ridgeline(filtered, "GWP_GHG_CIIX", "GWP GHG by Technology", "(kgCO2e) (lower is better)"), use_container_width=True)
+    st.altair_chart(ridgeline(filtered, "GWP_GHG_CIIX", "GWP GHG by Technology compared to IX", "(kgCO2e) (lower is better)"), use_container_width=True)
 
 with tab12:
     st.subheader("Lifecycle Cost (CIIX) (NPV($$)) (lower is better)")
-    st.altair_chart(ridgeline(filtered, "Afford_LifecycleCost_CIIX", "Lifecycle Cost (CIIX) by Technology", "Cost (NPV($$)) (lower is better)"), use_container_width=True)
+    st.altair_chart(ridgeline(filtered, "Afford_LifecycleCost_CIIX", "Lifecycle Cost (CIIX) by Technology compared to IX", "Cost (NPV($$)) (lower is better)"), use_container_width=True)
 
 with tab13:
     st.subheader("Maintenance Effort (Hours/Year) (lower is better)")
-    st.altair_chart(ridgeline(filtered, "FacOp_Maint_CIIX", "Maintenance Effort by Technology", "Hours/Year (lower is better)"), use_container_width=True)
+    st.altair_chart(ridgeline(filtered, "FacOp_Maint_CIIX", "Maintenance Effort by Technology compared to IX", "Hours/Year (lower is better)"), use_container_width=True)
 
 with tab14:
     st.subheader("Ozone Depletion (kgCFC-11eq) (lower is better)")
-    st.altair_chart(ridgeline(filtered, "GEHH_ODP_CIIX", "ODP by Technology", "Score: ODP (kgCFC-11eq) (lower is better)"), use_container_width=True)
+    st.altair_chart(ridgeline(filtered, "GEHH_ODP_CIIX", "ODP by Technology compared to IX", "Score: ODP (kgCFC-11eq) (lower is better)"), use_container_width=True)
 
 with tab15:
     st.subheader("Smog Formation (kgO3eq) (lower is better)")
-    st.altair_chart(ridgeline(filtered, "GEHH_Smog_CIIX", "Smog Formation by Technology", "Score: Smog (kgO3eq) (lower is better)"), use_container_width=True)
+    st.altair_chart(ridgeline(filtered, "GEHH_Smog_CIIX", "Smog Formation by Technology compared to IX", "Score: Smog (kgO3eq) (lower is better)"), use_container_width=True)
 
 with tab16:
     st.subheader("Waste Generation (Galloon/Year)(lower is better)")
-    st.altair_chart(ridgeline(filtered, "FacOp_Waste_CIIX", "Waste Generation by Technology", "Waste Generation (Galloon/Year) (lower is better)"), use_container_width=True)
+    st.altair_chart(ridgeline(filtered, "FacOp_Waste_CIIX", "Waste Generation by Technology compared to IX", "Waste Generation (Galloon/Year) (lower is better)"), use_container_width=True)
 
 with tab17:
     st.subheader("O&M Cost (NPV($$)) (lower is better)")
-    st.altair_chart(ridgeline(filtered, "Afford_OMCost_CIIX", "O&M Cost by Technology", "O&M Cost (%)) (lower is better)"), use_container_width=True)
+    st.altair_chart(ridgeline(filtered, "Afford_OMCost_CIIX", "O&M Cost by Technology compared to IX", "O&M Cost (%)) (lower is better)"), use_container_width=True)
 
 st.divider()
 st.caption(f"PFAS Ridgeline Tool — Showing {len(filtered)} rows. University of Maine (2025)")
