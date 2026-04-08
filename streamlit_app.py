@@ -333,7 +333,7 @@ with tab6:
 
 with tab7:
     st.subheader("Capital Cost (NPV($))(lower is better)")
-    st.altair_chart(ridgeline(filtered, "Afford_CapCost_CIIX", "Capital Cost Comparison to IX (NPV($) technology/NPV($) IX)", "Ration: Cost (NPV($) technology/NPV($) IX) (lower is better)"), use_container_width=True)
+    st.altair_chart(ridgeline(filtered, "Afford_CapCost_CIIX", "Capital Cost Comparison to IX (NPV($) technology/NPV($) IX)", "Ratio: Cost (NPV($) technology/NPV($) IX) (lower is better)"), use_container_width=True)
 
 with tab8:
     st.subheader("Ecotoxicity (CTUe) (lower is better)")
